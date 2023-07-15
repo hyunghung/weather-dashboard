@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    <div class="container">
-        <h1>Weather Dashboard</h1>
+<body class = "flex-column min-50-vh">
+    <!-- Header// Dashboard -->
+    <header class="hero">
+        <h1 class="hero-title">Weather Dashboard</h1>
+    </header>
+<!-- Body -->
+<main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+        <div class="search-container">
+            <h2 class="form-label">Search for a City:</h2>
+            <input type="text" id="city-input" class="form-input">
+            <button id="search-btn" class="search-history-item">Search</button>
+          </div>          
+          
+        <div id="search-history" class="search-history-container"></div>
     </div>
-    <div class="search-container">
-        <h2>Search for a City: </h2>
-        <input type="text" id="city-input">
-        <button id="search-btn">Search</button>
+    <div class="col-12 col-md-8">
+        <div class="info-container">
+            <h2 id="city-name"></h2>
+            <p>Temperature: <span id="temperature"></span></p>
+            <p>Wind: <span id="wind"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+        </div>
+        <div class="forecast-container">
+            <h2>5-Day Forecast:</h2>
+        </div>
     </div>
-    <div class="info-container">
-        <h2 id="city-name"></h2>
-        <p>Temperature: <span id="temperature"></span></p>
-        <p>Wind: <span id="wind"></span></p>
-        <p>Humidity: <span id="humidity"></span></p>
-    </div>
-    <div class="forecast-container">
-        <h2>5-Day Forecast:</h2>
-    </div>
+</main>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

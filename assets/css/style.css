@@ -1,0 +1,164 @@
+:root {
+  --primary: #f3f3f3;
+  --dark: #31255a;
+  --lighter: #f8f8f8;
+  --light: #75b4e3;
+  --foggy: #54416d;
+  --darklight: #2b235a;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0;
+  color: var(--black);
+  line-height: 1.25;
+}
+
+.hero {
+  padding: 3% 4%;
+  background-color: var(--dark);
+}
+
+.hero-title {
+  font-size: 50px;
+  color: var(--white);
+  padding: 0 10px;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-md-4 {
+  width: 33.33%;
+}
+
+.col-md-8 {
+  width: 66.66%;
+}
+
+.min-50-vh {
+  min-height: 50vh;
+}
+
+.info-container {
+  border: 1px solid var(--darklight);
+  border-radius: 5px;
+  padding: 20px;
+  align-content: center;
+  width: 300px;
+  margin: 20px;
+  background-color: var(--white);
+}
+
+.search-history-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-history-item {
+  padding: 15px 32px;
+  background-color: var(--lighter);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#search-btn {
+  background-color: var(--light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 32px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: var(--white);
+}
+
+#city-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 2px solid var(--light);
+  border-radius: 5px;
+}
+
+.form-label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.forecast-container {
+  border: 1px solid var(--darklight);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.forecast-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--light);
+  color: var(--dark);
+}
+
+.weather-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .col-md-4,
+  .col-md-8 {
+    width: 100%;
+  }
+}
