@@ -9,4 +9,4 @@ For the project, I was asked to make a webpage, using a Weather API that allows 
 # Links 
 GitHub: https://github.com/hyunghung/weather-dashboard
 
-Deployed Link: 
+Deployed Link: https://hyunghung.github.io/weather-dashboard/
